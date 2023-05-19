@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>NakopniPrahu 2023</title>
+  <link href="./style.css" rel="stylesheet" />
+</head>
+<body>
+  <div id="svg-container"></div>
+
+  <div class="display cctv" data-ref="cctv-1"><div class="cctv-footage"></div></div>
+  <div class="display cctv" data-ref="cctv-2"><div class="cctv-footage"></div></div>
+  <div class="display cctv" data-ref="cctv-3"><div class="cctv-footage"></div></div>
+  <div class="display cctv" data-ref="cctv-4"><div class="cctv-footage"></div></div>
+  <div class="display cctv" data-ref="cctv-5"><div class="cctv-footage"></div></div>
+  <div class="display cctv" data-ref="cctv-6"><div class="cctv-footage"></div></div>
+  <div class="display cctv" data-ref="cctv-7"><div class="cctv-footage"></div></div>
+  <div class="display cctv" data-ref="cctv-8"><div class="cctv-footage"></div></div>
+  <div class="display cctv" data-ref="cctv-9"><div class="cctv-footage"></div></div>
+  <div class="display cctv" data-ref="cctv-10"><div class="cctv-footage"></div></div>
+  <div class="display cctv" data-ref="cctv-11"><div class="cctv-footage"></div></div>
+  <div class="display cctv" data-ref="cctv-12"><div class="cctv-footage"></div></div>
+  <div class="display cctv" data-ref="cctv-13"><div class="cctv-footage"></div></div>
+  <div class="display cctv" data-ref="cctv-14"><div class="cctv-footage"></div></div>
+  <div class="display cctv" data-ref="cctv-15"><div class="cctv-footage"></div></div>
+  <div class="display cctv" data-ref="cctv-16"><div class="cctv-footage"></div></div>
+  <div class="display cctv" data-ref="cctv-17"><div class="cctv-footage"></div></div>
+  <div class="display cctv" data-ref="cctv-18"><div class="cctv-footage"></div></div>
+  <div class="display cctv" data-ref="cctv-19"><div class="cctv-footage"></div></div>
+  <div class="display cctv" data-ref="cctv-20"><div class="cctv-footage"></div></div>
+
+  <div class="display" id="main-display"></div>
+  <div class="display" id="aux-display-1">
+    <canvas id="graph-1"></canvas>
+    <canvas id="graph-2" height="200"></canvas>
+  </div>
+  <div class="display" id="aux-display-2">
+    <canvas height="370" id="graph-3" width="440"></canvas>
+  </div>
+
+  <img alt="" id="display-video" src="./images/video.png">
+  <img alt="" id="display-2" src="./images/display-2.png">
+  <img alt="" id="robomeow-logo" src="./images/robomeow.gif">
+  <video autoplay id="map-video" loop src="./images/map-video.mp4">
+  </video>
+
+  <div id="money-counter"></div>
+  <div id="hazard-counter"></div>
+  <div id="main-clock"></div>
+
+  <div id="report-stat"></div>
+  <div id="element-phone"></div>
+  <div id="element-notepad"></div>
+  <div id="element-case"></div>
+
+  <div id="modal-overlay"></div>
+
+  <div id="main-menu">
+    <button id="btn-start-game">Hrát</button>
+    <button id="btn-pvk-web">Web PVK</button>
+  </div>
+
+  <div id="modal-hazards" class="modal">
+    <button class="modal-close"></button>
+    <div class="modal-title">Nahlášené havárie</div>
+    <div class="modal-content">
+    </div>
+  </div>
+
+  <div class="water-object-icon" id="icon-podoli">
+    <div class="icon-tooltip">PODOLÍ</div>
+  </div>
+  <div class="water-object-icon" id="icon-zelivka">
+    <div class="icon-tooltip">želivka</div>
+  </div>
+  <div class="water-object-icon" id="icon-karany">
+    <div class="icon-tooltip">Káraný</div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="scripts/animations.js"></script>
+  <script src="scripts/game.js"></script>
+  <script src="scripts/ui.js"></script>
+</body>
+</html>
